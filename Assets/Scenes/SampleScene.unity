@@ -174,7 +174,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91d9442f2c0a1724485ef1598f6cb234, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774636772}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 91d9442f2c0a1724485ef1598f6cb234, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 774636771}
   m_SourcePrefab: {fileID: 100100000, guid: 91d9442f2c0a1724485ef1598f6cb234, type: 3}
 --- !u!1 &188639124
 GameObject:
@@ -552,6 +558,47 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1 &774636770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 91d9442f2c0a1724485ef1598f6cb234, type: 3}
+  m_PrefabInstance: {fileID: 185006926}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &774636771
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774636770}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 31aaf1eed0f8894489d503f6988713dc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &774636772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774636770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97b1deadc42fba0498f08a5ba265034e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  isWalking: 0
+  isRunning: 0
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
