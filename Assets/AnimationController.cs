@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class AnimationController : MonoBehaviour
 {
@@ -17,5 +18,20 @@ public class AnimationController : MonoBehaviour
     void Update()
     {
         // Here, update the Animator Controller parameters to match the booleans above.
+        if(Keyboard.current.leftShiftKey.isPressed && Keyboard.current.wKey.isPressed)
+        {
+            anim.SetBool("isRunning", true);
+            anim.SetBool("isWalking", true);
+        }
+        else if (Keyboard.current.wKey.isPressed)
+        {
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isWalking", true);
+        }
+        else
+        {
+            anim.SetBool("isRunning", false);
+            anim.SetBool("isWalking", false);
+        }
     }
 }
